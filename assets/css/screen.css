@@ -967,6 +967,10 @@ body:not(.post-template) .post-title {
     color: #9EABB3;
 }
 
+.post-meta .draft {
+    color: #E25440;
+}
+
 .author-thumb {
     width: 24px;
     height: 24px;

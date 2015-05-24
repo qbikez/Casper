@@ -22,6 +22,10 @@
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+            {{#unless isPublished}}
+                <span class="draft">Draft</span>
+            {{/unless}}
+
             </section>
         </header>
 
@@ -53,8 +57,10 @@
                     {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
                 </div>
             </section>
-
+            
         {{/author}}
+        
+        
 
             <section class="share">
                 <h4>Share this post</h4>
