@@ -17,9 +17,9 @@
         {{author}}
         {{tags prefix=" on "}}
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-      {{#unless isPublished}}
+      {{#if isDraft}}
         <span class="draft">Draft</span>
-        {{/unless}}
+        {{/if}}
     </footer>
 </article>
 {{/foreach}}
